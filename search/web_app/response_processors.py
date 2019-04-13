@@ -311,6 +311,9 @@ class SentenceViewer:
         belongs to. Return an HTML string with this data that
         can serve as a header for the context on the output page.
         """
+        with open('../speaker_meta.json', 'r', encoding='utf-8') as fil:
+            speakers_meta = json.loads(fil.read())
+
         if format == 'csv':
             result = ''
         else:
@@ -326,6 +329,9 @@ class SentenceViewer:
         if '_source' not in meta:
             return result + '</span>'
         meta = meta['_source']
+        place = meta['place_of_recording'] 
+        speakers = meta['speakers'].split(', ')
+        names = [speakers_meta[sp]['speaker_name'] for sp in speakers]
         if 'title' in meta:
             if type(meta['title']) == list:
                 meta['title'] = '; '.join(meta['title'])
@@ -361,6 +367,7 @@ class SentenceViewer:
                 result += '[' + dateDisplayed + ']'
             else:
                 result += '<span class="ch_date">' + dateDisplayed + '</span>'
+                result += '<span class="ch_place">' + place + '</span>'
         dataMeta = ''
         for metaField in self.settings['viewable_meta']:
             if metaField == 'filename':
@@ -372,7 +379,10 @@ class SentenceViewer:
                 dataMeta += metaField + ': ' + metaValue + '\\n'
             except KeyError:
                 pass
+        dataMeta += 'names of speakers: ' + ', '.join(names) + '\\n'
+        dataMeta += 'place of recording: ' + meta['place_of_recording'] + '\\n'
         dataMeta = dataMeta.replace('"', '&quot;')
+        #print(result)
         if len(dataMeta) > 0 and format != 'csv':
             result = result.replace('data-meta=""', 'data-meta="' + dataMeta + '"')
         if format != 'csv':

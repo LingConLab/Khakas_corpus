@@ -207,6 +207,10 @@
 	padding-left: 10px;
 }
 
+.ch_place {
+	padding-left: 20px;
+}
+
 .context {
 	border-radius: 10px;
 	border-top: 1px gray dotted;
