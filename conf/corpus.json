@@ -7,7 +7,7 @@
   "max_context_expand": 6,
   "max_distance_filter": 200000,
   "max_docs_retrieve": 9999,
-  "integer_meta_fields": ["year_of_birth"],
+  "integer_meta_fields": ["year of birth"],
   "max_words_in_sentence": 40,
   "query_timeout": 60,
   "viewable_meta": [
@@ -18,12 +18,15 @@
   ],
   "sentence_meta": [
     "speaker",
+    "speaker_name",
     "gender",
-    "year_of_birth",
-    "place_of_birth",
+    "native language",
+    "dialect",
+    "place of residence at the time of recording",
+    "place of birth",
+    "year of birth",
     "education",
-    "native_language",
-    "dialect"
+    "what work (before retirement)"
   ],
   "search_meta": {
     "columns": [
@@ -32,6 +35,9 @@
         {"type": "separator"},
         {"type": "input_number", "name": "year_from", "placeholder": "Year: from"},
         {"type": "input_number", "name": "year_to", "placeholder": "Year: to"}
+      ],
+      [
+        {"type": "input_text", "name": "place_of_recording", "placeholder": "Place of recording"}
       ]
     ],
     "stat_options": [

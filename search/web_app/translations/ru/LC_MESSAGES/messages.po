@@ -219,19 +219,151 @@ msgstr "точный"
 
 
 
-# Names of the metadata fields you have in the corpus:
+# Names and values of the metadata fields you have in the corpus:
 
-msgid "metafield_year_of_birth"
+msgid "m"
+msgstr "м"
+
+msgid "f"
+msgstr "ж"
+
+msgid "any"
+msgstr "любое"
+
+msgid "хакасский"
+msgstr "хакасский"
+
+msgid "русский"
+msgstr "русский"
+
+msgid "бельтырский"
+msgstr "бельтырский"
+
+msgid "сагайский (аскизский говор)"
+msgstr "сагайский (аскизский говор)"
+
+msgid "Московская область"
+msgstr "Московская область"
+
+msgid "Анчыл Чол (Аскизский р-н)"
+msgstr "Анчыл Чол (Аскизский р-н)"
+
+msgid "Чиланы"
+msgstr "Чиланы"
+
+msgid "Абакан"
+msgstr "Абакан"
+
+msgid "Казановка (Аскизский р-н)"
+msgstr "Казановка (Аскизский р-н)"
+
+msgid "Москва"
+msgstr "Москва"
+
+msgid "Верх-Аскиз (Аскизский р-н)"
+msgstr "Верх-Аскиз (Аскизский р-н)"
+
+msgid "Бутрахты"
+msgstr "Бутрахты"
+
+msgid "Карагай"
+msgstr "Карагай"
+
+msgid "Baj (Аскизский р-н)"
+msgstr "Baj (Аскизский р-н)"
+
+msgid "Тульская область"
+msgstr "Тульская область"
+
+msgid "Russia"
+msgstr "Russia"
+
+msgid "Сталино (Аскизский р-н)"
+msgstr "Сталино (Аскизский р-н)"
+
+msgid "Чапаево (Аскизский р-н)"
+msgstr "Чапаево (Аскизский р-н)"
+
+msgid "Тарбаган"
+msgstr "Тарбаган"
+
+msgid "Нижние Сиры"
+msgstr "Нижние Сиры"
+
+msgid "высшее (педагогическое)"
+msgstr "высшее (педагогическое)"
+
+msgid "высшее (филологическое)"
+msgstr "высшее (филологическое)"
+
+msgid "неполное высшее (филология)"
+msgstr "неполное высшее (филология)"
+
+msgid "д.ф.н."
+msgstr "д.ф.н."
+
+msgid "среднее"
+msgstr "среднее"
+
+msgid "к.ф.н. (лингвистика)"
+msgstr "к.ф.н. (лингвистика)"
+
+msgid "домохозяйка"
+msgstr "домохозяйка"
+
+msgid "аспирант, учитель хакасского языка"
+msgstr "аспирант, учитель хакасского языка"
+
+msgid "колхозница"
+msgstr "колхозница"
+
+msgid "учитель биологии и географии"
+msgstr "учитель биологии и географии"
+
+msgid "учитель хакасского и русского языка"
+msgstr "учитель хакасского и русского языка"
+
+msgid "разнорабочая"
+msgstr "разнорабочая"
+
+msgid "преподаватель университета"
+msgstr "преподаватель университета"
+
+msgid "студент"
+msgstr "студент"
+
+msgid "профессор, зав.отделом"
+msgstr "профессор, зав.отделом"
+
+msgid "исполнительница традиционной музыки"
+msgstr "исполнительница традиционной музыки"
+
+msgid "доярка"
+msgstr "доярка"
+
+msgid "учитель английского языка"
+msgstr "учитель английского языка"
+
+msgid "metafield_year of birth"
 msgstr "год рождения"
 
-msgid "metafield_place_of_birth"
+msgid "metafield_place of birth"
 msgstr "место рождения"
 
 msgid "metafield_education"
 msgstr "образование"
 
-msgid "metafield_native_language"
+msgid "metafield_native language"
 msgstr "родной язык"
+
+msgid "metafield_speaker_name"
+msgstr "имя говорящего"
+
+msgid "metafield_place of residence at the time of recording"
+msgstr "место проживания"
+
+msgid "metafield_what work (before retirement)"
+msgstr "профессия"
 
 msgid "metafield_dialect"
 msgstr "диалект"
