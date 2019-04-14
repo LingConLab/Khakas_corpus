@@ -100,28 +100,29 @@ class ConLabEAFConvertor:
                     'imp.2pl', 'imp.1sg', 'imp.1pl', 'all.abl', 'all1.abl', '3pos.attr',
                     '3pos.dat']
         toSplitFirst = ['imp.1.incl', 'imp.1pl.incl', 'imp.1pl.incl.dial']
+        notDial = ['prosp.dial', 'prespt.dial', 'prespt1.dial']
 
         for gl in tagsAndGlosses:
             gl = gl.lower().strip('?')
             if gl and gl in toSplit:
-                grammTags.add(gl.split('.')[-1])
-                grammTags.add('.'.join(gl.split('.')[:-1]))
+                grammTags.add(gl.split('.')[-1].replace('.dial', ''))
+                grammTags.add('.'.join(gl.split('.')[:-1]).replace('.dial', ''))
             elif gl and gl in toSplitFirst:
                 grammTags.add('imp')
-                grammTags.add(gl.strip('imp.'))
-            elif gl == '?':
-                print('?')
-                grammTags.add('unknown')
+                grammTags.add(gl.strip('imp.').replace('.dial', ''))
             else:
-                grammTags.add(gl)
+                if gl not in notDial:
+                    grammTags.add(gl.replace('.dial', ''))
+                else:
+                    grammTags.add(gl)
         if pos and len(pos) > 0:
             grammTags.add(pos.lower())
 
         if len(tagsAndGlosses) == 0 and pos == 'v':
             grammTags.add('imp')
             grammTags.add('2sg')
-            print(gloss)
-            print(grammTags)
+            # print(gloss)
+            # print(grammTags)
 
         if '(' in grammTags:
             print(grammTags)
