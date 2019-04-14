@@ -14,6 +14,7 @@
     "filename",
     "title",
     "year",
+    "place_of_recording",
     "speakers"
   ],
   "sentence_meta": [
@@ -37,7 +38,7 @@
         {"type": "input_number", "name": "year_to", "placeholder": "Year: to"}
       ],
       [
-        {"type": "input_text", "name": "place_of_recording", "placeholder": "Place of recording"}
+        {"type": "option", "name": "place_of_recording", "placeholder": "Place of recording"}
       ]
     ],
     "stat_options": [
@@ -75,7 +76,6 @@
         "columns": [
           [            
             {"type": "gloss", "value": "CASE", "tooltip": "Any&nbsp;case&nbsp;marker"},
-            {"type": "gloss", "value": "CASE1", "tooltip": "Any&nbsp;inner case&nbsp;marker"},
             {"type": "gloss", "value": "Acc", "tooltip": "Accusative case"},
             {"type": "gloss", "value": "Acc.dial", "tooltip": "Accusative case (dialectal form)"},
             {"type": "gloss", "value": "Gen", "tooltip": "Genitive case"},
@@ -97,6 +97,7 @@
             {"type": "gloss", "value": "Pl1", "tooltip": "Non-predicative plural (inner position)"},
             {"type": "gloss", "value": "PredPl", "tooltip": "Predicative plural"},
             {"type": "separator"},
+            {"type": "gloss", "value": "CASE1", "tooltip": "Any&nbsp;inner case&nbsp;marker"},
             {"type": "gloss", "value": "All1", "tooltip": "Allative (inner position)"},
             {"type": "gloss", "value": "Abl1", "tooltip": "Ablative (inner position)"},
             {"type": "gloss", "value": "Gen1", "tooltip": "Genitive case (inner position)"},
@@ -211,27 +212,20 @@
             {"type": "gramm", "value": "all1", "category": "case1", "tooltip": "Allative (inner position)"},
             {"type": "gramm", "value": "abl1", "category": "case1", "tooltip": "Ablative (inner position)"},
             {"type": "gramm", "value": "gen1", "category": "case1", "tooltip": "Genitive case (inner position)"},
-            {"type": "gramm", "value": "gen1.dial", "category": "case1", "tooltip": "Genitive case (inner position, dialectal form)"},
             {"type": "gramm", "value": "loc1", "category": "case1", "tooltip": "Locative (inner position)"}
             
           ],
           [
             {"type": "header", "value": "Cases"},
             {"type": "gramm", "value": "acc", "category": "case", "tooltip": "Accusative case"},
-            {"type": "gramm", "value": "acc.dial", "category": "case", "tooltip": "Accusative case (dialectal form)"},
             {"type": "gramm", "value": "gen", "category": "case", "tooltip": "Genitive case"},
-            {"type": "gramm", "value": "gen.dial", "category": "case", "tooltip": "Genitive case (dialectal form)"},
             {"type": "gramm", "value": "dat", "category": "case", "tooltip": "Dative case"},
             {"type": "gramm", "value": "loc", "category": "case", "tooltip": "Locative case"},
             {"type": "gramm", "value": "abl", "category": "case", "tooltip": "Ablative case"},
-            {"type": "gramm", "value": "abl.dial", "category": "case", "tooltip": "Ablative case (dialectal form)"},
             {"type": "gramm", "value": "all", "category": "case", "tooltip": "Allative case"},
-            {"type": "gramm", "value": "all.dial", "category": "case", "tooltip": "Allative case (dialectal form)"},
             {"type": "gramm", "value": "instr", "category": "case", "tooltip": "Instrumental case"},
-            {"type": "gramm", "value": "instr.dial", "category": "case", "tooltip": "Instrumental case (dialectal form)"},
             {"type": "gramm", "value": "prol", "category": "case", "tooltip": "Prolative / equative case"},
-            {"type": "gramm", "value": "delib", "category": "case", "tooltip": "Deliberative case"},
-            {"type": "gramm", "value": "delib.dial", "category": "case", "tooltip": "Deliberative case (dialectal form)"}
+            {"type": "gramm", "value": "delib", "category": "case", "tooltip": "Deliberative case"}
           ],
           [
             {"type": "header", "value": "Possessions"},
@@ -247,7 +241,6 @@
             {"type": "gramm", "value": "prosp.dial", "category": "aspect", "tooltip": "Prospective"},
             {"type": "gramm", "value": "dur", "category": "aspect", "tooltip": "Durative"},
             {"type": "gramm", "value": "dur1", "category": "aspect", "tooltip": "Durative (for 'go' and 'come')"},
-            {"type": "gramm", "value": "dur1.dial", "category": "aspect", "tooltip": "Dialectal durative (for 'go' and 'come')"},
             {"type": "gramm", "value": "iter", "category": "aspect", "tooltip": "Iterative"}
           ],
           [
@@ -260,7 +253,6 @@
             {"type": "gramm", "value": "fut", "category": "time/mode", "tooltip": "Future"},
             {"type": "gramm", "value": "neg.fut", "category": "time/mode", "tooltip": "Negative Future"},
             {"type": "gramm", "value": "convp", "category": "time/mode", "tooltip": "P-Converb"},
-            {"type": "gramm", "value": "convp.dial", "category": "time/mode", "tooltip": "P-Converb (dialectal form)"},
             {"type": "gramm", "value": "conva", "category": "time/mode", "tooltip": "A-Converb"},
             {"type": "gramm", "value": "neg.conv", "category": "time/mode", "tooltip": "Negative Converb"},
             {"type": "gramm", "value": "indir", "category": "time/mode", "tooltip": "Indirective"},
@@ -278,16 +270,12 @@
           [
             {"type": "header", "value": "Person markers"},
             {"type": "gramm", "value": "1sg", "category": "person", "tooltip": "1sg predicative"},
-            {"type": "gramm", "value": "1sg.dial", "category": "person", "tooltip": "1sg predicative (dialectal form)"},
             {"type": "gramm", "value": "1pl", "category": "person", "tooltip": "1pl predicative"},
-            {"type": "gramm", "value": "1pl.dial", "category": "person", "tooltip": "1pl predicative (dialectal form)"},
             {"type": "gramm", "value": "2sg", "category": "person", "tooltip": "2sg predicative"},
-            {"type": "gramm", "value": "2sg.dial", "category": "person", "tooltip": "2sg predicative (dialectal form)"},
             {"type": "gramm", "value": "2pl", "category": "person", "tooltip": "2pl predicative"},
             {"type": "gramm", "value": "3", "category": "person", "tooltip": "3rd person predicative"},
             {"type": "gramm", "value": "1.incl", "category": "person", "tooltip": "Inclusive (1&2 person)"},
             {"type": "gramm", "value": "1pl.incl", "category": "person", "tooltip": "Inclusive (1&2 person) plural predicative"},
-            {"type": "gramm", "value": "1pl.incl.dial", "category": "person", "tooltip": "Inclusive (1&2 person) plural predicative, dialectal form"},
             {"type": "header", "value": "Negation"},
             {"type": "gramm", "value": "neg", "category": "neg", "tooltip": "Negation"},
             {"type": "header", "value": "Other"},

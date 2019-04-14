@@ -349,6 +349,9 @@ msgstr "year of birth"
 msgid "metafield_place of birth"
 msgstr "place of birth"
 
+msgid "metafield_place_of_recording"
+msgstr "place of recording"
+
 msgid "metafield_education"
 msgstr "education"
 

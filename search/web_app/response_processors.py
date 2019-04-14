@@ -380,7 +380,6 @@ class SentenceViewer:
             except KeyError:
                 pass
         dataMeta += 'names of speakers: ' + ', '.join(names) + '\\n'
-        dataMeta += 'place of recording: ' + meta['place_of_recording'] + '\\n'
         dataMeta = dataMeta.replace('"', '&quot;')
         #print(result)
         if len(dataMeta) > 0 and format != 'csv':

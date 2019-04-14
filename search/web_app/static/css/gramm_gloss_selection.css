@@ -5,7 +5,7 @@
 .gloss_choice_panel {
 	margin: 5px 2%;
 	width: 96%;
-	font-size: 1em;
+	font-size: 0.9em;
 	overflow: auto;
 	white-space: nowrap;
 }
