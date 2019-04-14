@@ -301,6 +301,9 @@ msgstr "PhD"
 msgid "среднее"
 msgstr "secondary"
 
+msgid "начальное"
+msgstr "elementary"
+
 msgid "к.ф.н. (лингвистика)"
 msgstr "PhD (linguistics)"
 
