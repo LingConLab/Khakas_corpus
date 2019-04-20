@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{ _('corpus_title') }}</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/resume.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.png">
+
+  </head>
+
+  <body id="page-top">
+
+    <p style="padding-left:2.7rem" id="about">
+    &nbsp;&nbsp;|
+  <span class="locale" title="Russian"><a href="./set_locale_start/ru">RU</a></span>&nbsp;
+    |&nbsp;
+  <span class="locale" title="English"><a href="./set_locale_start/en">EN</a></span>&nbsp;
+    |&nbsp;
+    </p>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">{{ _('corpus_title') }}</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="static/img/emblem.png" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">{{ _('Главная') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#translit">{{ _('Транслитерация') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#instruction">{{ _('Как пользоваться корпусом') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./search">{{ _('Поиск') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#consist">{{ _('Состав корпуса') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#authors">{{ _('Создатели') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contacts">{{ _('Контакты') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#cite">{{ _('Как процитировать корпус') }}</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column">
+        <div class="my-auto">
+          <h2 class="mb-0">{{ _('Устный корпус диалектов') }}<br>
+            <span class="text-primary">{{ _('хакасского языка') }}</span>
+          </h2>
+          <br>
+          <br>
+          <p class="lead" align="justify">{{ _('Описание.') }}</p>
+          <br>
+          <a class="btn btn-primary btn-xl js-scroll-trigger btn-main" href="./search">{{ _('К поиску') }}</a>
+          <br>
+          <br>
+          
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="translit">
+        <div class="my-auto">
+          <h3 class="mb-3">{{ _('Транслитерация') }}</h3>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+
+            </div>
+          </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="instruction">
+        <div class="my-auto">
+          <h3 class="mb-3">{{ _('Как пользоваться корпусом') }}</h3>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+
+            </div>
+          </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="consist">
+        <div class="my-auto">
+          <h3 class="mb-3">{{ _('Состав корпуса') }}</h3>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+
+            </div>
+          </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="authors">
+        <div class="my-auto">
+          <h3 class="mb-3">{{ _('Создатели') }}</h3>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contacts">
+        <div class="my-auto">
+          <h3 class="mb-3">{{ _('Контакты') }}</h3>
+          <p class="lead">{{ _('По содержательным вопросам:') }}<br>
+          {{ _('Вера Сергеевна Мальцева') }}: malt.wh@gmail.com<br>
+
+          <p class="lead">{{ _('По техническим вопросам:') }}<br>
+          <a href="https://www.hse.ru/org/persons/160997992" target="_blank">{{ _('Елена Олеговна Сокур') }}</a>: elena.o.sokur@gmail.com</p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="cite">
+        <div class="my-auto">
+          <h3 class="mb-3">{{ _('Как процитировать корпус') }}</h3>
+          <p class="lead">{{ _('Если Вы используете данные Корпуса в своём исследовании, воспользуйтесь следующей ссылкой:') }}<br>
+        <div class="panel panel-default">
+          <div class="panel-body" align="justify">{{ _('Вера Мальцева, Елена Сокур. Устный корпус диалектов хакасского языка. М.: ИЯз РАН; М.: Международная лаборатория языковой конвергенции, НИУ ВШЭ. (Доступно онлайн по адресу: https://linghub.ru/oral_khakas_corpus/, дата обращения') }} <c id="dateFolder"></c>.)</div>
+            <script language="JavaScript">
+            temp_date = new Date();
+            day = temp_date.getDate();
+            month = temp_date.getMonth() + 1;
+            year = temp_date.getFullYear();
+            if (day < 10) {
+            day = "0" + day;
+            }
+            if (month <10) {
+            month = "0" + month;
+            }
+            document.getElementById('dateFolder').innerHTML = day + "." + month + "." + year;
+            </script>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="static/js/resume.min.js"></script>
+
+  </body>
+
+</html>

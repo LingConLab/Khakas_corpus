@@ -375,6 +375,11 @@ def update_expanded_contexts(context, neighboringIDs):
                 curSent['languages'][lang][side + '_id'] = neighboringIDs[lang][side]
 
 
+@app.route('/')
+def start_page():
+    return render_template('start_page.html')   
+    
+
 @app.route('/search')
 def search_page():
     """
@@ -1660,6 +1665,14 @@ def set_locale(lang=''):
         return
     set_session_data('locale', lang)
     return ''
+
+
+@app.route('/set_locale_start/<lang>')
+def set_locale_start(lang=''):
+    if lang not in settings['interface_languages']:
+        return
+    set_session_data('locale', lang)
+    return redirect("https://linghub.ru/oral_khakas_corpus/")
 
 
 @app.route('/help_dialogue')

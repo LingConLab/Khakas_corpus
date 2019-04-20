@@ -217,6 +217,64 @@ msgid "inputmethod_strict"
 msgstr "strict"
 
 
+# English version of the start page
+
+msgid "Главная"
+msgstr "Home"
+
+msgid "Транслитерация"
+msgstr "Transliteration"
+
+msgid "Как пользоваться корпусом"
+msgstr "Instruction"
+
+msgid "Поиск"
+msgstr "Search"
+
+msgid "Состав корпуса"
+msgstr "Corpus Composition"
+
+msgid "Создатели"
+msgstr "Project participants"
+
+msgid "Устный корпус диалектов"
+msgstr "Oral corpus of the dialects"
+
+msgid "хакасского языка"
+msgstr "of Khakas"
+
+msgid "К поиску"
+msgstr "Search"
+
+msgid "Контакты"
+msgstr "Contacts"
+
+msgid "По содержательным вопросам:"
+msgstr "You may contact us with questions about the Corpus:"
+
+msgid "По техническим вопросам:"
+msgstr "Or with questions about the search platform:"
+
+msgid "Елена Олеговна Сокур"
+msgstr "Elena Sokur"
+
+msgid "Как процитировать корпус"
+msgstr "How to cite the corpus"
+
+msgid "Описание."
+msgstr "Description."
+
+msgid "Вера Сергеевна Мальцева"
+msgstr "Vera Maltseva"
+
+msgid "Если Вы используете данные Корпуса в своём исследовании, воспользуйтесь следующей ссылкой:"
+msgstr "If you use data from the Oral corpus of the dialects of Khakas in your research, please cite as follows:"
+
+msgid "Вера Мальцева, Елена Сокур. Устный корпус диалектов хакасского языка. М.: ИЯз РАН; М.: Международная лаборатория языковой конвергенции, НИУ ВШЭ. (Доступно онлайн по адресу: https://linghub.ru/oral_khakas_corpus/, дата обращения"
+msgstr "Vera Maltseva, Elena Sokur. Oral corpus of the dialects of Khakas. Moscow: Institute of Linguistics; Moscow: Linguistic Convergence Laboratory, NRU HSE. (Available online at https://linghub.ru/oral_khakas_corpus/, accessed on"
+
+
+
 
 # Names and values of the metadata fields you have in the corpus:
 
@@ -247,6 +305,9 @@ msgstr "Anchyl Chol (Askiz district)"
 msgid "Чиланы"
 msgstr "Chylany"
 
+msgid "Чиланы (Таштыпский р-н)"
+msgstr "Chylany (Tashtyp district)"
+
 msgid "Абакан"
 msgstr "Abakan"
 
@@ -265,6 +326,12 @@ msgstr "Butrahty"
 msgid "Карагай"
 msgstr "Karagaj"
 
+msgid "Бутрахты (Таштыпский р-н)"
+msgstr "Butrahty (Tashtyp district)"
+
+msgid "Карагай (Таштыпский р-н)"
+msgstr "Karagaj (Tashtyp district)"
+
 msgid "Baj (Аскизский р-н)"
 msgstr "Baj (Askiz district)"
 
@@ -273,6 +340,9 @@ msgstr "Tula district"
 
 msgid "Russia"
 msgstr "Russia"
+
+msgid "Бай (Аскизский р-н)"
+msgstr "Baj (Askiz district)"
 
 msgid "Сталино (Аскизский р-н)"
 msgstr "Stalino (Askiz district)"
@@ -283,8 +353,14 @@ msgstr "Chapaevo (Askiz district)"
 msgid "Тарбаган"
 msgstr "Tarbagan"
 
+msgid "Тарбаган (Таштыпский р-н)"
+msgstr "Tarbagan (Tashtyp district)"
+
 msgid "Нижние Сиры"
 msgstr "Nizhnije Siry"
+
+msgid "Нижние Сиры (Таштыпский р-н)"
+msgstr "Nizhnije Siry (Tashtyp district)"
 
 msgid "высшее (педагогическое)"
 msgstr "higher (pedagogical)"
