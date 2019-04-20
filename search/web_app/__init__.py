@@ -1,4 +1,4 @@
-from flask import Flask, request, after_this_request, render_template, session, jsonify, current_app, send_from_directory, make_response, config
+from flask import Flask, redirect, request, after_this_request, render_template, session, jsonify, current_app, send_from_directory, make_response, config
 from flask_babel import gettext
 import json
 import gzip
