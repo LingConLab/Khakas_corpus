@@ -21,7 +21,7 @@ msgstr ""
 # ********  Please fill in the following strings:  ********
 
 msgid "corpus_title"
-msgstr "Oral corpus of the dialects of Khakas"
+msgstr "Spoken corpus of the dialects of Khakas"
 
 # Language names for the dropdown menu in search panel (please add all missing languages that you have in the corpus):
 
@@ -238,7 +238,7 @@ msgid "Создатели"
 msgstr "Project participants"
 
 msgid "Устный корпус диалектов"
-msgstr "Oral corpus of the dialects"
+msgstr "Spoken corpus of the dialects"
 
 msgid "хакасского языка"
 msgstr "of Khakas"
@@ -268,10 +268,10 @@ msgid "Вера Сергеевна Мальцева"
 msgstr "Vera Maltseva"
 
 msgid "Если Вы используете данные Корпуса в своём исследовании, воспользуйтесь следующей ссылкой:"
-msgstr "If you use data from the Oral corpus of the dialects of Khakas in your research, please cite as follows:"
+msgstr "If you use data from the Spoken corpus of the dialects of Khakas in your research, please cite as follows:"
 
 msgid "Вера Мальцева, Елена Сокур. Устный корпус диалектов хакасского языка. М.: ИЯз РАН; М.: Международная лаборатория языковой конвергенции, НИУ ВШЭ. (Доступно онлайн по адресу: https://linghub.ru/oral_khakas_corpus/, дата обращения"
-msgstr "Vera Maltseva, Elena Sokur. Oral corpus of the dialects of Khakas. Moscow: Institute of Linguistics; Moscow: Linguistic Convergence Laboratory, NRU HSE. (Available online at https://linghub.ru/oral_khakas_corpus/, accessed on"
+msgstr "Vera Maltseva, Elena Sokur. Spoken corpus of the dialects of Khakas. Moscow: Institute of Linguistics; Moscow: Linguistic Convergence Laboratory, NRU HSE. (Available online at https://linghub.ru/oral_khakas_corpus/, accessed on"
 
 
 
@@ -1158,7 +1158,7 @@ msgid "Here you can load a corpus query someone sent you. Please enter the query
 msgstr "Here you can load a corpus query someone sent you. Please enter the query below:"
 
 msgid "Устный корпус диалектов хакасского языка содержит расшифрованные и аннотированные записи текстов, синхронизированные со звуком. Тексты записаны в XXI веке от информантов 1916-1985 гг. рождения в рамках лингвистических экспедиций из Москвы в республику Хакасия. Все тексты пофразово переведены на русский язык. Тексты были автоматически отглоссированны, после чего с помощью программы ELAN была проведена ручная коррекция глоссирования и синхронизация транскрипции текста со звуком."
-msgstr "The Oral texts of the dialects of Khakas contains transcribed annotated texts, synchronized with the sound. The texts were recorded during the XXI century with speakers of 1916-1985 years of birth in the various expeditions from Moscow to the Repuplic of Khakasia. All texts are translated to Russian. Texts were analized by the automatic parser, and then edited and synchronized with the sound with the help of ELAN software."
+msgstr "The Spoken corpus of the dialects of Khakas contains transcribed annotated texts, synchronized with the sound. The texts were recorded during the XXI century with speakers of 1916-1985 years of birth in the various expeditions from Moscow to the Repuplic of Khakasia. All texts are translated to Russian. Texts were analized by the automatic parser, and then edited and synchronized with the sound with the help of ELAN software."
 
 msgid "Данный корпус соотносится с проектом"
 msgstr "This corpus is related to the project"
