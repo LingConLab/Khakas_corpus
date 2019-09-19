@@ -1832,17 +1832,23 @@ msgstr "Texts on other dialects (Kacha, Kyzyl, Shor) will be added."
 msgid "Создатели"
 msgstr "Project participants"
 
-msgid "Тексты были подготовлены к публикации в виде корпуса в 2017 г. при поддержке гранта"
-msgstr "The processing of the texts for inclusion in the corpus was conducted in 2017 with the support of the"
+msgid "Тексты были подготовлены к публикации в виде корпуса в 2017 г. Исполнитель проекта – Вера Сергеевна Мальцева."
+msgstr "The processing of the texts for inclusion in the corpus was conducted in 2017. This work was carried out by Vera Maltseva."
 
-msgid "Международной лаборатории языковой конвергенции"
+msgid "Международной лабораторией языковой конвергенции"
 msgstr "Linguistic Convergence Laboratory"
 
-msgid "НИУ ВШЭ"
+msgid "Высшей Школы Экономики"
 msgstr "of the National Research University Higher School of Economics"
 
 msgid ". Исполнитель проекта – Вера Сергеевна Мальцева."
 msgstr ". This work was carried out by Vera Maltseva."
+
+msgid "Проект Устного корпуса диалектов хакасского языка поддерживается"
+msgstr "The Spoken corpus of the dialects of Khakas is a project supported by the"
+
+msgid ". Корпус создан в рамках Программы фундаментальных исследований Национального исследовательского университета «Высшая школа экономики» (НИУ ВШЭ) и с использованием средств субсидии в рамках государственной поддержки ведущих университетов Российской Федерации «5-100»."
+msgstr ". It is conducted within the framework of the Basic Research Program at the National Research University 'Higher School of Economics' (HSE) and supported as part of the Russian Academic Excellence Project '5-100'."
 
 msgid "Этот проект является частью более общего проекта по описанию хакасского языка"
 msgstr "This project is a part of a large project on the documentation of the Khakas language"
