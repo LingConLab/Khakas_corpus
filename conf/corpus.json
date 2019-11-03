@@ -69,7 +69,8 @@
         "case1": "(all1|abl1|gen1|gen1\\.dial\\.3pos|loc1)",
         "person": "(PredPl|1sg|1sg\\.dial|2sg|2sg\\.dial|3|1pl|1pl\\.dial|2pl|1pl\\.Incl\\.dial|1pl\\.Incl|1\\.Incl)",
         "conv": "(convp|convp\\.dial|conva|neg\\.conv)",
-        "prtcp": "(past|prespt\\.dial|prespt1\\dial|fut|neg\\.fut|hab|assum|cunc)"
+        "prtcp": "(past|prespt\\.dial|prespt1\\dial|fut|neg\\.fut|hab|assum|cunc)",
+        "finite": "(rpast|pres|indir|affirm)"
       },
       "gr_fields_order": ["nType", "adjType", "proType", "stemType", "num_deriv", "v_form", "attributivizer", "tense", "person", "number", "case", "poss"],
       "gloss_selection": {
@@ -140,15 +141,17 @@
             {"type": "gloss", "value": "ConvP", "tooltip": "P-Converb"},
             {"type": "gloss", "value": "ConvP.dial", "tooltip": "P-Converb (dialectal form)"},
             {"type": "gloss", "value": "ConvA", "tooltip": "A-Converb"},
-            {"type": "gloss", "value": "Neg.Conv", "tooltip": "Negative Converb"}
+            {"type": "gloss", "value": "Neg.Conv", "tooltip": "Negative Converb"},
+            {"type": "gloss", "value": "Neg.Conv.dial", "tooltip": "Negative Converb (dialectal form)"}
           ],
           [
+            {"type": "gloss", "value": "FINITE", "tooltip": "Any finite verbform"},
             {"type": "gloss", "value": "RPast", "tooltip": "Recent past"},
             {"type": "gloss", "value": "Pres", "tooltip": "Presence"},
             {"type": "gloss", "value": "Indir", "tooltip": "Indirective"},
-            {"type": "gloss", "value": "Evid", "tooltip": "Evidential"},
             {"type": "gloss", "value": "Affirm", "tooltip": "Affirmative / subjunctive"},
-            {"type": "gloss", "value": "Comit", "tooltip": "Comitative"},
+            {"type": "separator"},
+            {"type": "gloss", "value": "Evid", "tooltip": "Evidential"},
             {"type": "gloss", "value": "Simul", "tooltip": "Simulative"},
             {"type": "separator"},
             {"type": "gloss", "value": "Neg", "tooltip": "Negation"},
@@ -156,7 +159,8 @@
             {"type": "gloss", "value": "Distr", "tooltip": "Distributive"},
             {"type": "gloss", "value": "Distr1", "tooltip": "Distributive second"},
             {"type": "gloss", "value": "NF", "tooltip": "Not-finished wordform"},
-            {"type": "gloss", "value": "Compl", "tooltip": "Complementizer"}
+            {"type": "gloss", "value": "NF.Neg", "tooltip": "Negative not-finished wordform"},
+            {"type": "gloss", "value": "NF.Neg.dial", "tooltip": "Negative not-finished wordform (dialectal form)"}
           ],
           [
             {"type": "gloss", "value": "PERSON", "tooltip": "Any person marker"},
@@ -174,8 +178,7 @@
           ],
           [            
             {"type": "gloss", "value": "Attr", "tooltip": "Attributivizer"},
-
-            {"type": "separator"},
+            {"type": "gloss", "value": "Comit", "tooltip": "Comitative"},
             {"type": "gloss", "value": "Adv", "tooltip": "Adverbializer"},
             {"type": "separator"},
             {"type": "gloss", "value": "Q", "tooltip": "Question"},
@@ -185,7 +188,8 @@
             {"type": "gloss", "value": "Magn", "tooltip": "High intence"},
             {"type": "gloss", "value": "Emph", "tooltip": "Emphatic particle"},
             {"type": "gloss", "value": "Confpart", "tooltip": "Confirmative particle"},
-            {"type": "gloss", "value": "Indef", "tooltip": "Indefinite pronoun"}
+            {"type": "gloss", "value": "Indef", "tooltip": "Indefinite pronoun"},
+            {"type": "gloss", "value": "Compl", "tooltip": "Complementizer"}
           ],
           [
             {"type": "gloss", "value": "Ass", "tooltip": "Associative"},
@@ -209,13 +213,7 @@
             {"type": "gramm", "value": "i1", "category": "pos", "tooltip": "Invariable (endoclitics possible)"},
             {"type": "header", "value": "Number"},
             {"type": "gramm", "value": "pl", "category": "nounnumber", "tooltip": "Non-predicative plural"},
-            {"type": "gramm", "value": "pl1", "category": "nounnumber", "tooltip": "Non-predicative plural (inner position)"},
-            {"type": "gramm", "value": "predpl", "category": "prednumber", "tooltip": "Predicative plural"},
-            {"type": "header", "value": "Inner cases"},
-            {"type": "gramm", "value": "all1", "category": "case1", "tooltip": "Allative (inner position)"},
-            {"type": "gramm", "value": "abl1", "category": "case1", "tooltip": "Ablative (inner position)"},
-            {"type": "gramm", "value": "gen1", "category": "case1", "tooltip": "Genitive case (inner position)"},
-            {"type": "gramm", "value": "loc1", "category": "case1", "tooltip": "Locative (inner position)"}
+            {"type": "gramm", "value": "predpl", "category": "prednumber", "tooltip": "Predicative plural"}
             
           ],
           [
@@ -237,23 +235,20 @@
             {"type": "gramm", "value": "2pos.sg", "category": "poss", "tooltip": "2sg possessive"},
             {"type": "gramm", "value": "2pos.pl", "category": "poss", "tooltip": "2pl possessive"},
             {"type": "gramm", "value": "3pos", "category": "poss", "tooltip": "3rd person possessive"},
-            {"type": "gramm", "value": "3pos1", "category": "poss1", "tooltip": "3rd person possessive (inner position)"},
             {"type": "header", "value": "Aspect"},
             {"type": "gramm", "value": "perf", "category": "aspect", "tooltip": "Perfective"},
-            {"type": "gramm", "value": "perf0", "category": "aspect", "tooltip": "Perfective (with inner particle)"},
-            {"type": "gramm", "value": "prosp.dial", "category": "aspect", "tooltip": "Prospective"},
+            {"type": "gramm", "value": "prosp", "category": "aspect", "tooltip": "Prospective"},
             {"type": "gramm", "value": "dur", "category": "aspect", "tooltip": "Durative"},
-            {"type": "gramm", "value": "dur1", "category": "aspect", "tooltip": "Durative (for 'go' and 'come')"},
             {"type": "gramm", "value": "iter", "category": "aspect", "tooltip": "Iterative"}
           ],
           [
-            {"type": "header", "value": "Tense/Mood"},
+            {"type": "header", "value": "Finite forms"},
             {"type": "gramm", "value": "rpast", "category": "time/mode", "tooltip": "Recent past"},
             {"type": "gramm", "value": "pres", "category": "time/mode", "tooltip": "Presence"},
             {"type": "gramm", "value": "indir", "category": "time/mode", "tooltip": "Indirective"},
-            {"type": "gramm", "value": "evid", "category": "time/mode", "tooltip": "Evidential"},
             {"type": "gramm", "value": "affirm", "category": "time/mode", "tooltip": "Affirmative / subjunctive"},
-            {"type": "gramm", "value": "comit", "category": "time/mode", "tooltip": "Comitative"},
+            {"type": "header", "value": "Tense/Mood"},
+            {"type": "gramm", "value": "evid", "category": "time/mode", "tooltip": "Evidential"},
             {"type": "gramm", "value": "imp", "category": "time/mode", "tooltip": "Imperative"},
             {"type": "gramm", "value": "cond", "category": "time/mode", "tooltip": "Conditional mood"},
             {"type": "gramm", "value": "opt", "category": "time/mode", "tooltip": "Optative"},
@@ -262,10 +257,7 @@
           [
             {"type": "header", "value": "Participles"},
             {"type": "gramm", "value": "past", "category": "time/mode", "tooltip": "Past"},
-            {"type": "gramm", "value": "prespt.dial", "category": "time/mode", "tooltip": "Present participle (dialectal)"},
-            {"type": "gramm", "value": "prespt1.dial", "category": "time/mode", "tooltip": "Present participle (dialectal, for 'go' and 'come')"},
             {"type": "gramm", "value": "fut", "category": "time/mode", "tooltip": "Future"},
-            {"type": "gramm", "value": "neg.fut", "category": "time/mode", "tooltip": "Negative Future"},
             {"type": "gramm", "value": "hab", "category": "time/mode", "tooltip": "Habitual"},
             {"type": "gramm", "value": "assum", "category": "time/mode", "tooltip": "Assumptive"},
             {"type": "gramm", "value": "cunc", "category": "time/mode", "tooltip": "Cunctative"},
@@ -287,15 +279,14 @@
             {"type": "gramm", "value": "neg", "category": "neg", "tooltip": "Negation"},
             {"type": "header", "value": "Other"},
             {"type": "gramm", "value": "distr", "category": "distr", "tooltip": "Distributive"},
-            {"type": "gramm", "value": "distr1", "category": "distr1", "tooltip": "Distributive second"},
-            {"type": "gramm", "value": "nf", "category": "nf", "tooltip": "Not-finished wordform"},
-            {"type": "gramm", "value": "compl", "category": "compl", "tooltip": "Complementizer"}
+            {"type": "gramm", "value": "nf", "category": "nf", "tooltip": "Not-finished wordform"}
           ],
           [
             {"type": "header", "value": "Nominal derivation"},            
             {"type": "gramm", "value": "attr", "category": "attr", "tooltip": "Attributivizer"},
             {"type": "gramm", "value": "dimin", "category": "dimin", "tooltip": "Diminutive"},
             {"type": "gramm", "value": "adv", "category": "adv", "tooltip": "Adverbializer"},
+            {"type": "gramm", "value": "comit", "category": "time/mode", "tooltip": "Comitative"},
             {"type": "header", "value": "Numeral derivation"},
             {"type": "gramm", "value": "coll", "category": "coll", "tooltip": "Collective numerals"},
             {"type": "gramm", "value": "dst", "category": "dst", "tooltip": "Distributive numerals"},
@@ -309,20 +300,16 @@
             
             {"type": "header", "value": "Particles"},
             {"type": "gramm", "value": "q", "category": "ptcl", "tooltip": "Question"},
-            {"type": "gramm", "value": "q2", "category": "ptcl2", "tooltip": "Question (before person)"},
             {"type": "gramm", "value": "qpart", "category": "ptcl", "tooltip": "Question emphatic particle"},
             {"type": "gramm", "value": "foc", "category": "ptcl", "tooltip": "Focus"},
             {"type": "gramm", "value": "magn", "category": "ptcl", "tooltip": "High intence"},
             {"type": "gramm", "value": "emph", "category": "ptcl", "tooltip": "Emphatic particle"},
             {"type": "gramm", "value": "confpart", "category": "ptcl", "tooltip": "Confirmative particle"},
             {"type": "gramm", "value": "indef", "category": "ptcl", "tooltip": "Indefinite pronoun"},
+            {"type": "gramm", "value": "compl", "category": "compl", "tooltip": "Complementizer"},
             {"type": "gramm", "value": "ass", "category": "ptcl", "tooltip": "Associative"},
-            {"type": "gramm", "value": "ass1", "category": "ptcl1", "tooltip": "Associative (before TAM)"},
-            {"type": "gramm", "value": "ass2", "category": "ptcl2", "tooltip": "Associative (before person)"},
             {"type": "gramm", "value": "cont", "category": "ptcl1", "tooltip": "Continuative (before TAM)"},
-            {"type": "gramm", "value": "cont2", "category": "ptcl2", "tooltip": "Continuative (before person)"},
             {"type": "gramm", "value": "add", "category": "ptcl", "tooltip": "Additive"},
-            {"type": "gramm", "value": "add1", "category": "ptcl1", "tooltip": "Additive (before TAM)"},
             {"type": "gramm", "value": "prec", "category": "ptcl", "tooltip": "Precative"}
           ]
         ]

@@ -98,23 +98,30 @@ class ConLabEAFConvertor:
                     'caus.caus', 'pass.rec', 'neg.conv.abl', 'caus.pass', 'dur.iter', 
                     'gen1.3pos', 'gen1.dial.3pos', '3pos.All', '3pos.Dat', 'imp.3',
                     'imp.2pl', 'imp.1sg', 'imp.1pl', 'all.abl', 'all1.abl', '3pos.attr',
-                    '3pos.dat']
+                    '3pos.dat', 'neg.fut']
+        toJoin = ['perf0', 'pl1', '3pos1', 'distr1', 'q2','ass1', 'ass2', 'cont2', 'add1', 
+                  'prespt1', 'dur1', 'all1', 'abl1', 'gen1', 'loc1']
         toSplitFirst = ['imp.1.incl', 'imp.1pl.incl', 'imp.1pl.incl.dial']
-        notDial = ['prosp.dial', 'prespt.dial', 'prespt1.dial']
+        # notDial = ['prosp.dial', 'prespt.dial', 'prespt1.dial']
 
         for gl in tagsAndGlosses:
+            # print(gl)
+            if 'cont2' in gl.lower():
+                print(gl)
             gl = gl.lower().strip('?')
+            gl = gl.replace('.dial', '')
+            if 'neg.conv' in gl:
+                grammTags.add('neg')
             if gl and gl in toSplit:
-                grammTags.add(gl.split('.')[-1].replace('.dial', ''))
+                grammTags.add(gl.split('.')[-1])
                 grammTags.add('.'.join(gl.split('.')[:-1]).replace('.dial', ''))
+            elif gl and gl in toJoin:
+                grammTags.add(gl[:-1])
             elif gl and gl in toSplitFirst:
                 grammTags.add('imp')
                 grammTags.add(gl.strip('imp.').replace('.dial', ''))
             else:
-                if gl not in notDial:
-                    grammTags.add(gl.replace('.dial', ''))
-                else:
-                    grammTags.add(gl)
+                grammTags.add(gl)
         if pos and len(pos) > 0:
             grammTags.add(pos.lower())
 

@@ -253,11 +253,12 @@ class Eaf2JSON(Txt2JSON):
                 words += self.add_punc(sBuffer, iBufferStart)
                 sBuffer = ''
                 iBufferStart = iSentPos
+                # print('Unexpected end of sentence:', text)
             #if iSentPos == len(text):
             #     # print(text)
             #     print(len(text))
             #     print(iSentPos)
-            #    print('Unexpected end of sentence:', text)
+
             #     return words
             # else:
             #     print(text)
