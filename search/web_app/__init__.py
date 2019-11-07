@@ -1535,8 +1535,19 @@ def download_cur_results_csv():
     pageData = get_session_data('page_data')
     if pageData is None or len(pageData) <= 0:
         return ''
-    result = prepare_results_for_download(pageData)
-    return '\n'.join(['\t'.join(s) for s in result if len(s) > 0])
+    results = prepare_results_for_download(pageData)
+    for result in results:
+        if len(result) > 2:
+            bash = result[1].split('\t')
+            rus = result[2]
+            result.pop()
+            result.pop()
+            for elem in bash:
+                result.append(elem)
+            result.append(rus)
+    return '\n'.join(['\t'.join(s) for s in results if len(s) > 0])
+    # result = prepare_results_for_download(pageData)
+    # return '\n'.join(['\t'.join(s) for s in result if len(s) > 0])
 
 
 @app.route('/download_cur_results_xlsx')
@@ -1550,6 +1561,17 @@ def download_cur_results_xlsx():
     if pageData is None or len(pageData) <= 0:
         return ''
     results = prepare_results_for_download(pageData)
+    
+    for result in results:
+        if len(result) > 2:
+            bash = result[1].split('\t')
+            rus = result[2]
+            result.pop()
+            result.pop()
+            for elem in bash:
+                result.append(elem)
+            result.append(rus)
+
     XLSXFilename = 'results-' + str(uuid.uuid4()) + '.xlsx'
     workbook = xlsxwriter.Workbook('tmp/' + XLSXFilename)
     worksheet = workbook.add_worksheet('Search results')

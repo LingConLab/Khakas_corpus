@@ -25,10 +25,53 @@ var selectGlossCaption = "{{ _('Select glosses') }}";
 var forTheQueryCaption = "{{ _('the query') }}";
 var nothingFoundCaption = "{{ _('Nothing found.') }}";
 </script>
+
+<script type="text/javascript">
+	function keyboard(id){
+		elem = document.getElementById(id);
+		window.key = id;		
+	    coords = elem.getBoundingClientRect();
+	    var top_modal = coords.top - 14;
+	    var left_modal = coords.left + 200;
+	    var id_new = id.replace(/[0-9]/g, '');
+	    if (id_new == 'wf'){
+	    	var other = 'lex';
+	    } else {
+	    	var other = 'wf';
+	    };
+	    $('#popover_' + id_new).css({'margin-top': top_modal, 'margin-left': left_modal});
+	    $('#popover_' + other).fadeOut('fast');
+		$('#popover_' + id_new).toggle();
+		
+		$('#keyboard_' + id_new + ' li').click(function(e){
+			
+		var $this = $(this),
+        	character = $this.text(); 
+        	var $write = $('#' + window.key);
+        $write.val($('#' + window.key).val() + character);
+        character.val() = '';
+        }); 
+	}
+document.addEventListener('click', function(event) {
+	var search = document.getElementById(window.key);
+	var wf = document.getElementById('popover_wf');
+	var lex = document.getElementById('popover_lex');
+  	var isClickInsideSearch = search.contains(event.target);
+  	var isClickInsideWf = wf.contains(event.target);
+  	var isClickInsideLex = lex.contains(event.target);
+	if (!isClickInsideSearch && !isClickInsideWf && !isClickInsideLex) {
+	    $('#popover_wf').fadeOut('fast');
+	    $('#popover_lex').fadeOut('fast');
+  }
+});
+</script>
+
+
 <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet"> -->
 {% if media %}
 <link href="https://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">
 <link href="static/css/videojs.markers.min.css" rel="stylesheet">
+<link href="static/css/keyboard.css" type="text/css" rel="stylesheet">
 <script src="https://vjs.zencdn.net/5.19.2/video.js"></script>
 <script src="static/js/videojs-markers.js"></script>
 {% if youtube %}
@@ -51,6 +94,29 @@ var nothingFoundCaption = "{{ _('Nothing found.') }}";
 {% endif %}
 <span id="show_help" class="glyphicon glyphicon-question-sign" aria-hidden="true"><span class="tooltip_prompt">{{ _('Show help') }}</span></span>
 </p>
+
+<div class="popover fade right in" role="tooltip" id="popover_lex" style="width: 168px !important; top: -27px; left: -28.625px; display: none;"><div class="arrow" style="top: 50%;"></div><h3 class="popover-title" style="display: none;"></h3><div class="popover-content">
+                    <ul id="keyboard_lex" class="keyboard">
+                    <li class="symbol"><span class="off">ғ</span></li>
+                    <li class="symbol"><span class="off">ң</span></li>
+                    <li class="symbol"><span class="off">ӌ</span></li>
+                    <li class="symbol"><span class="off">ӧ</span></li>
+                    <li class="symbol"><span class="off">ӱ</span></li>
+                    <li class="symbol"><span class="off">і</span></li>
+                    </ul>
+                </div></div>
+
+<div class="popover fade right in" role="tooltip" id="popover_wf" style="width: 168px !important; top: -27px; left: -28.625px; display: none;"><div class="arrow" style="top: 50%;"></div><h3 class="popover-title" style="display: none;"></h3><div class="popover-content">
+                    <ul id="keyboard_wf" class="keyboard">
+                    <li class="symbol"><span class="off">ғ</span></li>
+                    <li class="symbol"><span class="off">ң</span></li>
+                    <li class="symbol"><span class="off">ӌ</span></li>
+                    <li class="symbol"><span class="off">ӧ</span></li>
+                    <li class="symbol"><span class="off">ӱ</span></li>
+                    <li class="symbol"><span class="off">і</span></li>
+                    </ul>
+                </div></div>
+
 <div id="search_div" class="transitions init-hidden">
 	<div class="show-hide">
 	<div class="slide">
@@ -71,8 +137,8 @@ var nothingFoundCaption = "{{ _('Nothing found.') }}";
 						<div class="word_search" id="first_word">
 							<div class="word_search_l">
 								<div class="query_word_header"><div class="circle circle_w1"></div>{{ _('Word_header') }} {{ _('Number_sign') }}1</div>
-								{{ _('Word:') }} <input type="text" class="search_input" name="wf1" id="wf1"><br>
-								{{ _('Lemma:') }} <input type="text" class="search_input" name="lex1" id="lex1"><br>
+								{{ _('Word:') }} <input type="text" class="search_input" name="wf1" id="wf1" onclick="keyboard(this.id);"><br>
+								{{ _('Lemma:') }} <input type="text" class="search_input" name="lex1" id="lex1" onclick="keyboard(this.id);"><br>
 								{{ _('Grammar:') }} <input type="text" class="search_input gram_selector_input" name="gr1" id="gr1"><span class="gram_selector_link glyphicon glyphicon-edit" data-field="gr" data-nword="1"></span><br>
 								<input type="hidden" class="search_input" name="w_id1" id="w_id1">
 								{% if gloss_search_enabled %}

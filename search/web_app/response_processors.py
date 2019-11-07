@@ -712,8 +712,46 @@ class SentenceViewer:
         relationsSatisfied = True
         if 'toggled_on' in s and not s['toggled_on']:
             relationsSatisfied = False
-        text = self.view_sentence_meta(sSource, format) +\
-               self.transliterate_baseline(''.join(chars), lang=lang, translit=translit)
+        # text = self.view_sentence_meta(sSource, format) +\
+        #        self.transliterate_baseline(''.join(chars), lang=lang, translit=translit)
+
+        if format == 'csv':
+            if lang == 'khakas':
+                text = self.view_sentence_meta(sSource, format) + '\t' + \
+                       self.transliterate_baseline(''.join(chars), lang=lang, translit=translit)
+            else:
+                text = self.transliterate_baseline(''.join(chars), lang=lang, translit=translit)
+        else:
+            text = self.view_sentence_meta(sSource, format) + \
+                   self.transliterate_baseline(''.join(chars), lang=lang, translit=translit)
+
+        if format == 'csv':
+            words = sSource['words']
+            anas = ''
+            parts = ''
+            for word in words:
+                # print(word)
+                if 'ana' in word and word['wtype'] == 'word':
+                    gloss = ''
+                    # print(word['ana'])
+                    if len(word['ana']) > 0:
+                        if 'parts' in word['ana'][0]:
+                            part = word['ana'][0]['parts']
+                            parts += part
+                            parts += ' '
+                        if 'gloss' in word['ana'][0]:
+                            analyses = self.simplify_ana(word['ana'], [])[0]
+                            gloss += ' || '.join(ana['gloss'] for ana in analyses if 'gloss' in ana)
+                            anas += gloss
+                            anas += ' '
+            if parts:
+                text += '\t'
+                text += parts
+            if anas:
+                text += '\t'
+                text += anas
+            # print(text)
+
         return {'header': header, 'languages': {langView: {'text': text,
                                                            'highlighted_text': highlightedText}},
                 'toggled_on': relationsSatisfied,

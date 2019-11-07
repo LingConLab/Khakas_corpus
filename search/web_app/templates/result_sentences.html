@@ -1,4 +1,16 @@
-﻿{% if data.timeout %}
+﻿<script>
+	function copy_message(indx){
+		elem = document.getElementById('copy_gloss' + indx);
+		coords = elem.getBoundingClientRect();
+		var top = coords.top - 150;
+		var left = coords.left - 475;
+		$('#copied_message').css({'margin-top': top, 'margin-left': left});
+		$('#copied_message').show();
+		setTimeout(function(){ $('#copied_message').fadeOut();}, 500);
+	}
+</script>
+
+{% if data.timeout %}
 <p class="message">{{ _('The search was not finished due to the query timeout. You only see partial results.') }}</p>
 {% endif %}
 {% if data.subcorpus_enabled %}
@@ -10,6 +22,8 @@
 {% endif %}
 {{ data.n_sentences }} {{ _('sentence(s) found in approximately') }} {{ data.n_docs }} {{ _('document(s)') }}.</p>
 
+<div id="copied_message" style="position: absolute !important; z-index: 300000000; background-color: #2e74b3; display: none; color: #FFFFFF; border-radius: 3px; font-family: Circe Rounded; font-size: 16px; width: 70px; height: 30px; text-align: center; line-height: 28px; vertical-align: middle;">Copied!</div>
+
 <div class="sent_results">
 {% for c in data.contexts %}
 	{% set context_loop = loop %}
@@ -17,7 +31,7 @@
 	<span class="ch_container">{{ c.header | safe }}</span>
 	<div class="cx_main">
 	<div class="cx_toggle_div"><input type="checkbox" class="cx_toggle_chk" {% if c.toggled_on %} checked{% endif %}></div>
-	<span class="get_glossed_copy" data-nsent="{{ loop.index - 1 }}"><span class="glyph_copy glyphicon glyphicon-copy" aria-hidden="true"></span></span>
+	<span class="get_glossed_copy" title="Copy to clipboard" id='copy_gloss{{ loop.index - 1 }}' onclick="copy_message('{{ loop.index - 1 }}');" data-nsent="{{ loop.index - 1 }}"><span class="glyph_copy glyphicon glyphicon-copy" aria-hidden="true"></span></span>
 	<span class="sentence" id='res{{ loop.index - 1 }}'>
 	{% for lang in data.languages %}
 		{% if lang in c.languages %}
@@ -60,6 +74,7 @@ var srcAlignments = {{ data.src_alignment | safe }};
 	</div>
 	<a href="download_cur_results_csv" download="results-{{ data.page }}.csv">{{ _('download as CSV') }}</a>
 	<a href="download_cur_results_xlsx" download="results-{{ data.page }}.xlsx">{{ _('download as XLSX') }}</a>
+	<p style="color: grey; font-size: 12px;">{{ _('To download all results, scroll to the last page.') }}</p>
 	<script type='text/javascript'>assign_word_events(); hide_query_panel();</script>
 	{% if data.media %}
 	<script type='text/javascript'>
