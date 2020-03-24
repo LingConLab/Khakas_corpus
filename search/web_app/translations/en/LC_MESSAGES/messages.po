@@ -1158,7 +1158,7 @@ msgid "Here you can load a corpus query someone sent you. Please enter the query
 msgstr "Here you can load a corpus query someone sent you. Please enter the query below:"
 
 msgid "Устный корпус диалектов хакасского языка содержит расшифрованные и аннотированные записи текстов, синхронизированные со звуком. Тексты записаны в XXI веке от информантов 1916-1985 гг. рождения в рамках лингвистических экспедиций из Москвы в республику Хакасия. Все тексты пофразово переведены на русский язык. Тексты были автоматически отглоссированны, после чего с помощью программы ELAN была проведена ручная коррекция глоссирования и синхронизация транскрипции текста со звуком."
-msgstr "The Spoken corpus of the dialects of Khakas contains transcribed annotated texts, synchronized with the sound. The texts were recorded during the XXI century with speakers of 1916-1985 years of birth in the various expeditions from Moscow to the Repuplic of Khakasia. All texts are translated to Russian. Texts were analized by the automatic parser, and then edited and synchronized with the sound with the help of ELAN software."
+msgstr "The Spoken corpus of the dialects of Khakas contains transcribed annotated texts, synchronized with the sound. The texts were recorded during the 21st century with speakers born in 1916-1985 in different expeditions from Moscow to the Republic of Khakassia. All texts are translated to Russian. Texts were analyzed using the automatic parser, and then edited and synchronized with the sound with the help of the ELAN software."
 
 msgid "Данный корпус соотносится с проектом"
 msgstr "This corpus is related to the project"
@@ -1167,22 +1167,22 @@ msgid "Электронный корпус хакасского языка"
 msgstr "Electronic Corpus of Khakas language"
 
 msgid "На этом сайте можно более подробно ознакомиться с целями и принципами данного проекта."
-msgstr "There is more information about the aims and methods of the project, but only in Russian for now."
+msgstr "Follow the link to see more information about the aims and methods of the project (Russian only, for now)."
 
 msgid "Транскрипция"
 msgstr "Trancription"
 
 msgid "Тексты записаны в кириллической транскрипции с помощью знаков хакасского алфавита, поскольку парсер ориентирован на работу с литературным хакасским языком. Фонетические особенности диалектов почти не отражаются в транскрипции, однако мы старались сохранить морфологические и морфонологические особенности."
-msgstr "We use the symbols of the Cyrillic khakas alphabet for transcription of our texts because the parser was made for the analisys of Literary Khakas. Regular phonetic dialect features are mainly ignored, but we tried to show the mophology and morphonology features."
+msgstr "We use the symbols of the Cyrillic Khakas alphabet for transcription of our texts because the parser was made with the goal of analyzing Literary Khakas. Regular phonetic dialect features are mainly ignored, but we tried to show the morphology and morphonology features."
 
 msgid "Морфонология"
 msgstr "Morphonology"
 
-msgid "В строке разбиения на морфемы основы представлены в фонологической записи (транскрипции), а аффиксы – в морфонологической. Каждый аффикс представлен в единой форме, объединяющей его алломорфы с регулярными чередованиями. Например, словоформа туралар ‘дома’  в строке разбиения на морфемы имеет вид тура‑ЛАр. Показатель множественного числа имеет алломорфы ‑лар, ‑лер, ‑нар, ‑нер, ‑тар, ‑тер, а в строке глоссирования этому соответствует одна морфема ‑ЛАр. Морфонемы без чередований записываются теми же символами, что и фонемы. "
-msgstr "In the layer with morpheme dividing of the wordforms the stems are written in phonology transcription, and the affixes are written in morphonology transcription. For example, туралар ‘houses’ look like тура-ЛАр when divided to morphemes. The plural marker has allomorphs лар, лер, нар, нер, тар, тер, and in the glossing layes there is one marker ЛАр. Morphonemes without alternations are written with the same symbols as phonemes."
+msgid "В строке разбиения на морфемы основы представлены в фонологической записи (транскрипции), а аффиксы – в морфонологической. Каждый аффикс представлен в единой форме, объединяющей его алломорфы с регулярными чередованиями. Например, словоформа туралар ‘дома’  в строке разбиения на морфемы имеет вид тура ЛАр. Показатель множественного числа имеет алломорфы  лар,  лер,  нар,  нер,  тар,  тер, а в строке глоссирования этому соответствует одна морфема  ЛАр. Морфонемы без чередований записываются теми же символами, что и фонемы. "
+msgstr "In the layer with morpheme dividing of the wordforms the stems are written in phonology transcription, and the affixes are written in morphonology transcription. For example, туралар ‘houses’ look like тура-ЛАр when divided to morphemes. The plural marker has allomorphs  лар,  лер,  нар,  нер,  тар,  тер, and in the glossing layes there is one marker  ЛАр. Morphonemes without alternations are written with the same symbols as phonemes."
 
 msgid "Подробнее об этом см. в статье: А. В. Дыбо, Ф. С. Крылов, В. С. Мальцева, А. В. Шеймович. Сегментные правила в автоматическом парсере Корпуса хакасского языка. // Урало-алтайские исследования. № 1 (32), 2019. Стр. 48-69. https://iling-ran.ru/library/ural-altaic/ua2019_32.pdf"
-msgstr "See more about it in the paper: Anna V. Dybo, Philip S. Krylov, Vera S. Maltseva, Aleksandra V. Sheimovich. Segmental rules in the automatic parser for the Khakass corpus. In: Ural-Altaoc studies. N 1 (32), 2019. P. 48-69 (in Russian) https://iling-ran.ru/library/ural-altaic/ua2019_32.pdf"
+msgstr "See more on the subject in the paper: Anna V. Dybo, Philip S. Krylov, Vera S. Maltseva, Aleksandra V. Sheimovich. Segmental rules in the automatic parser for the Khakass corpus. In: Ural-Altaoc studies. N 1 (32), 2019. P. 48-69 (in Russian) https://iling-ran.ru/library/ural-altaic/ua2019_32.pdf"
 
 msgid "Морфонемы и фонемы"
 msgstr "Morphonemes"
@@ -1194,10 +1194,10 @@ msgid "Согласные морфонемы"
 msgstr "Consonant morphonemes"
 
 msgid "Этот Корпус относится к группе корпусов, использующих поисковую платформу"
-msgstr "This corpus belongs to a group of corpora that are built on the search platform"
+msgstr "This corpus belongs to a group of corpora that are built using the search platform"
 
 msgid ". Инструкция с описанием общих технических возможностей поиска в корпусах этого типа содержится в разделе «Справка» (кнопка с вопросительным знаком в правом верхнем углу страницы поиска). Здесь же описываются правила, специфические для данного корпуса."
-msgstr ". A more general instruction with common technical properties of these corpora can be found in the “Help” section (look for the button marked with a question mark in the top right corner of the search page). The current text describes those rules and conventions that are specific for this Corpus."
+msgstr ". A more general instruction with common technical properties of these corpora can be found in the “Help” section (look for the button marked with a question mark in the top right corner of the search page). The current text describes the rules and conventions that are specific for this Corpus."
 
 msgid "Поиск точных форм («Слово»)"
 msgstr "Searching for specific word forms («Word»)"
@@ -1212,16 +1212,16 @@ msgid "Поиск лексем («Лемма»)"
 msgstr "Searching for specific lemmas («Lemma»)"
 
 msgid "Это поле следует использовать для поиска всех форм одного слова (лексемы, леммы). "
-msgstr "This field should be used if you need to find all forms of a given word (a.k.a. lemma, or lexeme). "
+msgstr "This field should be used if you need to find all forms of a given word (lexeme or lemma). "
 
 msgid "Например, если в это поле вбить слово иб ‘дом’, то в поисковой выдаче окажутся все вхождения этого существительного во всех его формах, например, иб ‘дом’, ибні [дом-Acc] ‘(вижу) дом’, иб-і-нде [дом-3pos-Acc] ‘в его доме’ и т.д."
 msgstr "For example, if you enter “иб” ‘home’, the search results will show all sentences where any form of this noun is used, e.g., иб ‘home’, ибні [home-ACC] ‘home (direct object)’, ибінде [home-3pos-Loc] ‘at his home’, etc."
 
 msgid "Леммы следует вводить в поле поиска в начальной форме, т.е. в той же форме, которая используется в хакасских словарях. Для имен (существительных, прилагательных, наречий, местоимений и числительных) начальная форма совпадает с основой (например, иб ‘дом’, сіліг ‘красивый’, ам ‘сейчас’, син ‘ты’, ікі ‘два’). Для глаголов используется форма инфинитива на -Ар-ГА, например, тоғынарға ‘работать’, килерге ‘приходить’. "
-msgstr "Lemmas should be entered in this field in their base form, that is, in the same form which is also used in dictionaries. For nouns, adjectives, adverbs, pronouns and numerals, identification of the base form is the same as stem (e.g., иб ‘house’, кічіг ‘small’, ам ‘now’, син ‘you’, ікі ‘two’). For verbs, in accordance with the lexicographic practice, the infinitive form with the suffixes ArGA is used, e.g., тоғынарға ‘to work’, килерге ‘to come’ etc. "
+msgstr "Lemmas should be entered in this field in their base form, that is, in the same form which is used in dictionaries. For nouns, adjectives, adverbs, pronouns and numerals, base form is the same as stem (e.g., иб ‘house’, кічіг ‘small’, ам ‘now’, син ‘you’, ікі ‘two’). For verbs, in accordance with the lexicographic practice, the infinitive form with the suffixes  Ar GA is used, e.g., тоғынарға ‘to work’, килерге ‘to come’ etc. "
 
 msgid "Для форм местоимений ол ‘тот’ и пу ‘этот’, в т.ч. в локативных падежах, используются леммы ол и пу, хотя в словаре формы косвенных падежей записаны в виде отдельных лексем. Исключение составляют субстантивированные формы с показателем 3л. посессива ан(ы)зы, мын(ы)зы, пунызы, которые мы считаем отдельными лексемами. Все формы личных местоимений одного лица и числа также относятся к одной лемме: мин ‘я’, син ‘ты’, олар ‘они’ и пр."
-msgstr "For the case forms, including locatives, of pronouns ол ‘this’ and пу ‘that’ are used lemmmas ол and пу, although in the dictionnaries their case forms are written as separate lexemes. We consider substantivized forms with 3 rd person possessive marker ан(ы)зы, мын(ы)зы, пунызы as separate lexemes. All the forms of the personal pronouns (with the same person and number) also relate to one lemma: мин ‘I’, син ‘you’, олар ‘they’, etc."
+msgstr "For the case forms, including locatives, of pronouns ол ‘this’ and пу ‘that’, lemmmas ол and пу are used, although in the dictionnaries their case forms are written as separate lexemes. The only exceptions are substantivized forms with 3rd person possessive marker ан(ы)зы, мын(ы)зы, пунызы which we consider to be separate lexemes. All the forms of the personal pronouns (with the same person and number) also relate to one lemma: мин ‘I’, син ‘you’, олар ‘they’, etc."
 
 msgid "Грамматика"
 msgstr "Grammar"
@@ -1236,25 +1236,25 @@ msgid "Части речи"
 msgstr "Parts of speech"
 
 msgid "v – глагол (в т.ч. причастие и деепричастие), полная парадигма словоизменения"
-msgstr "v – verb (including participle and converb), takes all the inflective markers."
+msgstr "a verb (including participle and converb), takes all the inflective markers."
 
 msgid "n – имя (существительное, прилагательное, местоимение, числительное, послелог), не изменяется по временам, видам и наклонениям. "
-msgstr "n – nominal (noun, adjective, pronoun, numeral, postposition), doesn’t take negation, time, aspect and mood markers. "
+msgstr "a nominal (noun, adjective, pronoun, numeral, postposition), doesn’t take negation, time, aspect and mood markers. "
 
 msgid "Часть имен не изменяется по падежам, но спрягается (напр. осхас ‘похожий’). Есть намерение выделить такие лексемы в отдельную часть речи после проведения корпусного исследования."
-msgstr "Some nominals doesn’t take case markers but take personal markers (ex. осхас ‘recembling’). We want to unite such lexemes in one separate part of speech after a corpus research."
+msgstr "Some nominals don’t take case markers but take personal markers (ex. осхас ‘resembling’). We want to unite such lexemes in one separate part of speech after a corpus research."
 
 msgid "i1 – неизменяемое, к которому могут крепиться эндоклитики (в частности, частица -ох/-ӧх/-ӧк, поглощающая последнюю гласную основы). Напр., піди ‘так’. В эту категорию попадают большинство наречий, в т.ч. застывшие формы деепричастий."
-msgstr "i1 – invariable, which can combine with endoclitics (including particle -ох/-ӧх/-ӧк, which absorbs the last vovel of the stem). For example, піди ‘так’. This category unite the most part of adverbs, icluding the grammaticalized forms of converbs."
+msgstr "i1 – an invariable which can combine with endoclitics (including particle -ох/-ӧх/-ӧк, which absorbs the last vowel of the stem). For example, піди ‘так’. This category unites most adverbs, including the grammaticalized forms of converbs."
 
 msgid "i – неизменямое, к которому эндоклитики не присоединяются (частица, междометие, союз)"
-msgstr "i – invariable, which can’t combine with endoclitics (particle, conjunction, interjection)"
+msgstr "i – an invariable which can’t combine with endoclitics (particle, conjunction, interjection)"
 
 msgid "Показатели"
 msgstr "Markers"
 
 msgid "Как в разделе «Грамматика», так и в разделе «Глоссы», можно искать только формы с выраженными (ненулевыми) показателями. Исключение составляет глагольная форма повелительного наклонения (единственного числа), представляющая собой чистую основу глагола. Можно найти ее, выбрав в разделе «Грамматика» значения imp и 2sg.)"
-msgstr "Both in “Gloss” field and in “Grammar” field you can only search for the forms with non-zero markers. The only exclusion is the imperative singular form which is a bare form of the verb. One can find it selecting in “Grammar” field meanings “imp” and “2sg”."
+msgstr "Both in “Gloss” field and in “Grammar” field you can only search for the forms with non-zero markers. The only exclusion is the imperative singular form which is a bare form of the verb. One can find it by selecting options “imp” and “2sg” in the “Grammar” field."
 
 msgid "Показатели с цифрой 1 или 2 на  конце (за исключением dur1) занимают более близкую к корню позицию, чем те же показатели без цифр, и выполняют скорее словообразовательную, а не словоизменительную функцию."
 msgstr "Marker with a number 1 or 2 (excluding “dur1”) are situated nearer to the stem then the same markers without numbers, and are used mainly as word formative markers. (Markers with number 1 are nearer to the stem then markers with number 2.)"
@@ -1290,19 +1290,19 @@ msgid "аалдағылар ‘те, кто (живет) в селе’"
 msgstr "аалдағылар ‘those who are (living) in village’"
 
 msgid "All1 и Abl1 встречаются очень редко, обычно в застывших формах в сочетании с другими падежами."
-msgstr "“All1” and “Abl1” are very rare, you can only find them in some grammaticalized forms combinied with other cases."
+msgstr "“All1” and “Abl1” are very rare, you can only find them in some grammaticalized forms combined with other cases."
 
 msgid "Сочетание аффиксов Gen1 и 3pos представляет собой на синхронном уровне единый кумулятивный показатель -ни (диалектный вариант -Ди), поэтому мы разделяем их не дефисом, а точкой. Пример: сілерни / сілерди ‘то, что принадлежит вам’."
-msgstr "The combination of “Gen1” and “3pos” synchronically is a cumulative marker ни (dialectal variant Ди), therefore we divide them not by hyphen but a dot. Example: сілерни / сілерди ‘yours’."
+msgstr "The combination of “Gen1” and “3pos” synchronically is a cumulative marker  ни (dialectal variant  Ди), therefore we divide them not by hyphen but a dot. Example: сілерни / сілерди ‘yours’."
 
 msgid "Падежи"
 msgstr "Cases"
 
 msgid "У всех падежей есть алломорфы, используемые в сочетании с показателями принадлежности единственного числа."
-msgstr "All the cases have the allomorphes which are used with the possessive singular markers."
+msgstr "All cases have allomorphs which are used with the possessive singular markers."
 
 msgid "У многих падежей есть диалектные варианты. Показатели исходного и творительного падежа в некоторых говорах совпадают."
-msgstr "Most cases have the dialectal variants. The ablative and the instumental cases use one morpheme in some dialects."
+msgstr "Most cases have dialectal variants. The ablative and the instrumental cases use one morpheme in some dialects."
 
 msgid "аккузатив (винительный)"
 msgstr "accusative"
@@ -1596,7 +1596,7 @@ msgid "парғазар ‘вы пошли’"
 msgstr "парғазар ‘you (pl) went’"
 
 msgid "3 лицо (маркированная форма только в императиве, нуль невозможно отличить автоматически от отсутствия категории в словоформе)"
-msgstr "3 rd person marker (marked form only with imperative; it’s not possible to distinguish zero marker and the absence of marker in the word automatically)"
+msgstr "3rd person marker (marked form only with imperative; it’s not possible to distinguish zero marker and the absence of marker in the word automatically)"
 
 msgid "ползын ‘пусть (он) будет’"
 msgstr "ползын ‘let it be’"
@@ -1722,7 +1722,7 @@ msgid "Частицы"
 msgstr "Particles"
 
 msgid "Большинство частиц-эндоклитик записываются в хакасской орфографии как отдельные варианты, хотя у многих из них есть регулярные фонетические чередования, а некоторые из них употребляются также в качестве энклитик."
-msgstr "Many of endoclitical particles are written as the separate words in the Khakas orthography, thought many of them have regular phonetical alternations, and some of them are used as enclitics."
+msgstr "Many of endoclitical particles are written as separate words in the Khakas orthography, though many of them have regular phonetical alternations, and some of them are used as enclitics."
 
 msgid "частица общего вопроса"
 msgstr "general question particle"
@@ -1806,13 +1806,13 @@ msgid "Общие принципы работы поиска по глоссам
 msgstr "The general principle of search by a gloss and the major differences of this type of search from the grammatical search are described in the “Help” section (the button with a question mark in the top right corner of the search window). The key features of the gloss-based search that are specific for this corpus are given below."
 
 msgid "Все диалектные показатели помечены пометой .dial. Это касается как вариантов морфем (Acc.dial), так и показателей, отсутствующих в литературном языке (Prosp.dial)."
-msgstr "All the dialectal markers has the label .dial, both the morpheme variants (Acc.dial) and the markers which are not used in literary Khakas (Prosp.dial)."
+msgstr "All the dialectal markers have the .dial label, both the morpheme variants (Acc.dial) and the markers which are not used in literary Khakas (Prosp.dial)."
 
 msgid "При поиске по глоссам не находятся такие словоформы, при глоссировании которых релевантные части словоформ не членятся на морфемы. Например, словоформа дательного падежа местоимения син ‘ты’ выглядит как сегее / сағаа / сее, не членится на морфемы и глоссируется целиком как “ты.Dat”. Эта словоформа попадает в выдачу по грамматическому запросу «dat», но при поиске по глоссам она не попадает в выдачу по запросу «STEM-DAT». "
-msgstr "Gloss-based search does not include the word forms where there is no morphemic border between the marker in question and the stem. For instance, the dative case form of the pronoun син ‘you’ is сегее / сағаа / сее, which is not segmentable into morphemes and glossed “you.DAT”. This form will be among the hits of the grammatical query “dat”, but will not be included in the occurrences corresponding to the gloss-based search “STEM-DAT”."
+msgstr "Gloss-based search does not include the word forms where there is no morphemic border between the marker in question and the stem. For instance, the dative case form of the pronoun син ‘you’ is сегее / сағаа / сее, which is not segmentable into morphemes and glossed “you.DAT”. This form will be among the hits of the grammatical query “dat”, but will not be included in the occurrences corresponding to the gloss-based search “STEM-DAT”. "
 
 msgid "При записи формул строения словоформ можно воспользоваться такими элементами, как CASE, CASE1, POSS, PRTCP, CONV, PERSON. Каждый из них соответствует не конкретной морфеме, а группе морфем. CASE — любой показатель падежа, CASE1 — любой показатель падежа во внутренней позиции, POSS — любой притяжательный показатель, PRTCP — любой показатель причастия, CONV — любой показатель деепричастия, PERSON — любой личный показатель. "
-msgstr "The gloss-based query can be constructed using either specific glosses or the options CASE, CASE1, POSS, PRTCP, CONV, PERSON. These labels specify a group of morphemes rather than a specific gloss. CASE stands for any case marker, CASE1 stands for any case marker in inner position, POSS stands for any possessive marker, PRTCP stands for and participle marker, CONV stands for any converb marker, and PERSON stands for any person marker."
+msgstr "The gloss-based query can be constructed using either specific glosses or the options CASE, CASE1, POSS, PRTCP, CONV, PERSON. These labels specify a group of morphemes rather than a specific gloss. CASE stands for any case marker, CASE1 stands for any case marker in inner position, POSS stands for any possessive marker, PRTCP stands for any participle marker, CONV stands for any converb marker, and PERSON stands for any person marker. "
 
 msgid "Состав корпуса"
 msgstr "Corpus composition"
@@ -1821,7 +1821,7 @@ msgid "На данный момент в корпусе представлены
 msgstr "The corpus contains:"
 
 msgid "- 23 текста на аскизском говоре сагайского диалекта, собранные в с. Казановка в 2001-2002 гг. в рамках экспедиции Российского государственного гуманитарного университета под руководством Нины Романовны Сумбатовой. Объем корпуса – 13 тыс. слов, длительность записи 2 ч. 18 мин."
-msgstr "- 23 texts of Askiz dialect, collected in village Kazanovka in 2001-2002 during the expedition of the Linguistic Department of th Russian University State for Humanities, headed by Nina Sumbatova. It contains about 13 000 tokens, the duration is 2h 18 min."
+msgstr "- 23 texts of Askiz dialect, collected in the Kazanovka village in 2001-2002 during the expedition of the Linguistic Department of the Russian State University for Humanities, headed by Nina Sumbatova. It contains about 13 000 tokens, the duration is 2h 18 min."
 
 msgid "- 27 текстов на бельтырском диалекте, собранные в 2011 г. в сс. Бутрахты, Чиланы, Карагай Э.В. Султрековой (Кыржинаковой) и А.В. Дыбо. Объем корпуса 45 тыс. слов, длительность 9 ч. 22 мин."
 msgstr "- 27 texts of Belty dialect, collected in 2011 in villages Butrachty, Chylany, Karagay by Anna Dybo and Elvira Kyrzhinakova. It contains about 45 000 tokens, the duration is 9 h 22 min."
@@ -1854,16 +1854,16 @@ msgid "Этот проект является частью более общег
 msgstr "This project is a part of a large project on the documentation of the Khakas language"
 
 msgid "В нем принимают участие:"
-msgstr "The following people are invoved in:"
+msgstr "The following people are involved:"
 
 msgid "Анна Владимировна Дыбо – руководство проектом, создание автоматического парсера (содержательная часть)"
-msgstr "Anna Dybo – project supervizer, automatic parser creation"
+msgstr "Anna Dybo – project supervisor, automatic parser creation"
 
 msgid "Эльвира Валерьевна Султрекова (Кыржинакова) – расшифровка и перевод большинства текстов (тексты из дер. Казановка 2001-2002 гг. в основном расшифрованы и переведены участниками экспедиций РГГУ при помощи жителей деревни)"
-msgstr "Elvira Sultrekova (Kyrzhinakova) – transcription and translation of the major part of texs (text collected in Kazanovka village in 2001-2002 were mostly transcripted and tranlated by the members of expedition with the help of the people of the village)."
+msgstr "Elvira Sultrekova (Kyrzhinakova) – transcription and translation of most texts (text collected in Kazanovka village in 2001-2002 were mostly transcribed and translated by the members of expedition with the help of the people of the village)."
 
 msgid "Александра Валерьевна Шеймович – словарь (создание электронного словаря хакасского языка в системе Starling на основе Хакасского-русского словаря (Новосибирск, 2006, ок. 220 тыс. слов)"
-msgstr "Alexandra Sheymovich – dictionary (conversion The Khakas-Russian dictionary (Novosibirsk, 2006, 220 th. of words) into Starling based electronic dictionary)"
+msgstr "Alexandra Sheymovich – dictionary (conversion of The Khakas-Russian dictionary"
 
 msgid "Филипп Сергеевич Крылов – создание автоматического парсера (техническая часть) "
 msgstr "Phil Krylov – programming of the automatic parser"
@@ -1872,4 +1872,4 @@ msgid "Вера Сергеевна Мальцева – создание авт�
 msgstr "Vera Maltseva – automatic parser creation, text processing in Elan (correction of the parser’s results, annotation of sound)"
 
 msgid "Елена Валерьевна Тенькова – написание и поддержка макроса для записи результатов автоматического парсирования текстов в программу ELAN"
-msgstr "Elena Tenkova – macros for writing of results of automatic parcing of texts in Elan files"
+msgstr "Elena Tenkova – macros for writing of results of automatic parsing of texts in Elan files"
